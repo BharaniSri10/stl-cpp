@@ -5,12 +5,12 @@
 // class_name<type> obj;
 #include <iostream>  
 using namespace std; 
-template <class T>
+template <class T1,class T2>
 class A{
 	public:
-		 T x;
-		 T y;
-	A(T a,T b){
+		 T1 x;
+		 T2 y;
+	A(T1 a,T2 b){
 		x=a;
 		y=b;
 	}
@@ -19,10 +19,10 @@ class A{
 	}
 };
 int main(){
-	A<int> f1(1,2);
+	A<int,float> f1(1,2.1);
 	f1.display();
 	
-	A<float> f2(1.1,2.2);
+	A<float,float> f2(1.1,2.2);
 	f2.display();
 }
 
